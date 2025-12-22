@@ -51,6 +51,11 @@ Resistors for pull‑ups/pull‑downs and configuring certain components.
 Design Intent
 The board is structured as a general‑purpose development platform: small enough for prototyping, yet robust enough for integration into finished projects. With USB‑C power and data, onboard flash, and full GPIO breakout, it’s versatile for applications ranging from IoT nodes to custom controllers. The careful inclusion of ESD protection, decoupling, and regulated rails ensures reliable operation even in noisy environments.
 
-
+Here is the 3D model of my PCB.
+<img width="1584" height="892" alt="Screenshot 2025-12-19 182844" src="https://github.com/user-attachments/assets/f871791a-3a05-4a31-9932-0241d4228020" />
 
 You can find the schematics in the repository as well as the PCB design and it's Gerber files.
+Here are the PCB and Schematics Images for your reference here aswell:
+<img width="926" height="653" alt="Screenshot 2025-12-13 184159" src="https://github.com/user-attachments/assets/acb29a58-dfae-4880-b8e9-1781f1ecc0db" />
+<img width="735" height="558" alt="Screenshot 2025-12-17 222851" src="https://github.com/user-attachments/assets/7c90573e-26f5-4503-bf70-16d245196f12" />
+

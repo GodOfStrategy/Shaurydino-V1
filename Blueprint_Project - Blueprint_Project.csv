@@ -1,0 +1,17 @@
+Designator,Footprint,Quantity,Comment,Price ($- USD),Datasheet
+"C1,C10",Capacitor_SMD:C_0402_1005Metric,2,1uF,0.06,~
+"C2,C3,C4,C5,C6,C7,C8,C9,C11,C12,C17",Capacitor_SMD:C_0402_1005Metric,10,0.1uF,0.04,~
+"C14, C13",Capacitor_SMD:C_0201_0603Metric,1,10uF,0.11,~
+"C15,C16",Capacitor_SMD:C_0402_1005Metric,2,33 pF,0.02,~
+"J1,J4",Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical,2,Conn_01x20,nil,~
+J2,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,1,USB_C_Receptacle_USB2.0_14P,0.34,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+J3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1,Conn_01x03,nil,~
+"R1,R2",Resistor_SMD:R_0402_1005Metric,2,5.1 K,0.01,~
+"R3,R4",Resistor_SMD:R_0402_1005Metric,2,27,0.01,~
+"R6, R5",Resistor_SMD:R_0402_1005Metric,1,1K,0.01,~
+R7,Resistor_SMD:R_0402_1005Metric,1,10K,0.01,~
+SW1,Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK,1,SW_Push,0.26,~
+U1,Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm,1,RP2040,1.86,https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
+U2,Package_TO_SOT_SMD:SOT-223-3_TabPin2,1,NCP1117-3.3_SOT223,0.46,http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
+U3,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,1,W25Q128JVS,3.01,https://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf
+Y1,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,1,12 MHz,0.4,~

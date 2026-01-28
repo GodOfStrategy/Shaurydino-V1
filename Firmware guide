@@ -1,0 +1,114 @@
+#Firmware
+So, to make sure that my board was recognized by the compiler and everything worked properly, I had to edit Arduino IDE's code files to accommodate my board and its pin layout. Follow this to make sure your board is recognized as well!
+Step-by-step guide to make your custom RP2040 board recognized and programmable in Arduino IDE
+You’ve got the pin map and board entry—now here’s the clean, end-to-end workflow to implement it and verify everything works.
+
+Prerequisites
+Arduino IDE installed (v2.x recommended).
+
+Earle Philhower RP2040 core installed via Board Manager.
+
+Your RP2040 board wired for USB UF2 (BOOTSEL, USB D+/D−, 3V3/1V1 rails, crystal or internal clock).
+
+Install the RP2040 core
+Open Arduino IDE → File → Preferences.
+
+In Additional Board Manager URLs, add:
+
+Code
+"https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json"
+Go to Tools → Board → Board Manager.
+
+Search for RP2040 and install “Raspberry Pi RP2040 Boards by Earle Philhower”.
+
+Locate the core files
+Windows:
+
+C:\Users<You>\AppData\Local\Arduino15\packages\rp2040\hardware\arduino-pico<version>\
+
+macOS/Linux:
+
+~/.arduino15/packages/rp2040/hardware/arduino-pico//
+
+You’ll find boards.txt and the variants/ folder here. The .arduino15 directory is hidden—enable “show hidden files.”
+
+Create your custom variant
+In .../variants/, create a new folder: myboard.
+
+Inside myboard, create pins_arduino.h and paste this:
+"
+cpp
+#pragma once
+
+// ===== LED =====
+#define PINLED 25
+#ifndef LEDBUILTIN
+#define LEDBUILTIN PINLED
+#endif
+
+// ===== UART (Serial1) =====
+#define PINSERIALTX 0 // J1 TX → GPIO0
+#define PINSERIALRX 1 // J1 RX → GPIO1
+
+// ===== I2C (Wire) =====
+#define PINWIRESDA 8 // J1 SDA → GPIO8
+#define PINWIRESCL 9 // J1 SCL → GPIO9
+
+// ===== SPI =====
+#define PINSPISCK 2 // J1 SCK → GPIO2
+#define PINSPIMOSI 3 // J1 MOSI → GPIO3
+#define PINSPIMISO 4 // J1 MISO → GPIO4
+#define PINSPICS 5 // J1 CS → GPIO5
+
+// ===== ADC channels =====
+#define PINA0 26 // J1 ADC0 → GPIO26
+#define PINA1 27 // J1 ADC1 → GPIO27
+#define PIN_A2 28 // J1 ADC2 → GPIO28
+
+// ===== Debug pins =====
+#define PINSWCLK 24 // SWCLK → GPIO24
+#define PINSWDIO 25 // SWDIO → GPIO25
+
+// ===== Connector aliases =====
+#define PINJ1TX 0
+#define PINJ1RX 1
+#define PINJ1SCK 2
+#define PINJ1MOSI 3
+#define PINJ1MISO 4
+#define PINJ1CS 5
+#define PINJ1SDA 8
+#define PINJ1SCL 9
+#define PINJ1ADC0 26
+#define PINJ1ADC1 27
+#define PINJ1ADC2 28
+
+// ===== Default interfaces =====
+#define SERIALPORTMONITOR Serial
+#define SERIALPORTHARDWARE Serial1
+"
+Add your board to boards.txt
+Open .../boards.txt.
+
+Append this block at the end:
+"
+txt
+##############################################################
+
+myboard.name=My Custom RP2040 Board
+myboard.build.core=rp2040
+myboard.build.variant=myboard
+myboard.upload.maximumsize=2097152
+myboard.upload.maximumdatasize=262144
+myboard.upload.protocol=rp2040
+myboard.build.fcpu=133000000L
+myboard.build.usbproduct="Custom RP2040"
+myboard.build.usbmanufacturer="ShauryaLabs"
+"
+Save the file.
+
+Restart Arduino IDE and select your board
+Close and reopen Arduino IDE.
+
+Go to Tools → Board and select My Custom RP2040 Board.
+
+Choose the correct Port (or use BOOTSEL mode for UF2 upload).

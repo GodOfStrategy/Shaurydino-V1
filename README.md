@@ -1,5 +1,6 @@
 # Shaurdino-V1
 A custom devboard tailored for small and medium applications.
+I plan to use it to efficiently reduce electricity consumption in a voice recorder and announcer module of my own.
 
 Key Features
 Core MCU:

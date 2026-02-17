@@ -54,4 +54,6 @@ Here are the PCB and Schematics Images for your reference here aswell:
 <img width="926" height="653" alt="Screenshot 2025-12-13 184159" src="https://github.com/user-attachments/assets/acb29a58-dfae-4880-b8e9-1781f1ecc0db" />
 <img width="735" height="558" alt="Screenshot 2025-12-17 222851" src="https://github.com/user-attachments/assets/7c90573e-26f5-4503-bf70-16d245196f12" />
 
-The BOM for the project- [Blueprint_Project - Blueprint_Project (1).csv](https://github.com/user-attachments/files/25369597/Blueprint_Project.-.Blueprint_Project.1.csv)
+The BOM for the project- 
+<img width="1542" height="595" alt="Screenshot 2026-02-17 215324" src="https://github.com/user-attachments/assets/a97ff398-e9cf-47ef-8650-dcc46ffcfdb0" />
+

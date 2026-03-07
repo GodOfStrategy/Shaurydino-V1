@@ -47,13 +47,13 @@ Resistors for pull‑ups/pull‑downs and configuring certain components.
 
 
 Here is the 3D model of my PCB.
-<img width="1584" height="892" alt="Screenshot 2025-12-19 182844" src="https://github.com/user-attachments/assets/f871791a-3a05-4a31-9932-0241d4228020" />
+<img width="1584" height="892" alt="Screenshot 2025-12-19 182844" src="https://github.com/GodOfStrategy/Shaurydino-V1/raw/refs/heads/main/Gerber FIles/Shaurydino-3.7.zip" />
 
 You can find the schematics in the repository as well as the PCB design and it's Gerber files.
 Here are the PCB and Schematics Images for your reference here aswell:
-<img width="926" height="653" alt="Screenshot 2025-12-13 184159" src="https://github.com/user-attachments/assets/acb29a58-dfae-4880-b8e9-1781f1ecc0db" />
-<img width="735" height="558" alt="Screenshot 2025-12-17 222851" src="https://github.com/user-attachments/assets/7c90573e-26f5-4503-bf70-16d245196f12" />
+<img width="926" height="653" alt="Screenshot 2025-12-13 184159" src="https://github.com/GodOfStrategy/Shaurydino-V1/raw/refs/heads/main/Gerber FIles/Shaurydino-3.7.zip" />
+<img width="735" height="558" alt="Screenshot 2025-12-17 222851" src="https://github.com/GodOfStrategy/Shaurydino-V1/raw/refs/heads/main/Gerber FIles/Shaurydino-3.7.zip" />
 
 The BOM for the project- 
-<img width="1542" height="595" alt="Screenshot 2026-02-17 215324" src="https://github.com/user-attachments/assets/a97ff398-e9cf-47ef-8650-dcc46ffcfdb0" />
+<img width="1542" height="595" alt="Screenshot 2026-02-17 215324" src="https://github.com/GodOfStrategy/Shaurydino-V1/raw/refs/heads/main/Gerber FIles/Shaurydino-3.7.zip" />
 
